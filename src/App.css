@@ -1,10 +1,12 @@
 .App {
   text-align: center;
+  background-color: #282c34; /* set background color */
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear; /* add animation */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +16,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +37,50 @@
     transform: rotate(360deg);
   }
 }
+
+.RegistrationForm {
+  margin-top: 2rem;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.RegistrationForm h1 {
+  margin-bottom: 1rem;
+}
+
+.RegistrationForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.RegistrationForm input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.RegistrationForm p {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.RegistrationForm button {
+  padding: 0.5rem 1rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.RegistrationForm button:hover {
+  background-color: #45c9e3;
+}
+
